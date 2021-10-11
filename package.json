@@ -1,0 +1,19 @@
+{
+  "name": "sushi-harness-test",
+  "version": "0.0.0",
+  "description": "CI testing harness",
+  "main": "inject.base.js",
+  "scripts": {
+  },
+  "keywords": [],
+  "license": "SEE LICENSE IN LICENSE",
+  "dependencies": {
+    "@testim/testim-cli": "^3.189.0",
+    "chai": "^4.3.4",
+    "coverage": "^0.4.1",
+    "mocha": "^9.1.2",
+    "pactum": "^3.0.21",
+    "puppeteer": "^10.4.0",
+    "tape": "^5.3.1"
+  }
+}
