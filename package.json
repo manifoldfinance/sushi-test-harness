@@ -3,7 +3,12 @@
   "version": "0.0.0",
   "description": "CI testing harness",
   "main": "inject.base.js",
+  "private": true,
   "scripts": {
+    "cypress": "npx cypress open",
+    "cypress:headless": "npx cypress run",
+    "e2e": "start-server-and-test start http://localhost:3000 cypress",
+    "e2e:headless": "start-server-and-test start http://localhost:3000 cypress:headless"
   },
   "keywords": [],
   "license": "SEE LICENSE IN LICENSE",
@@ -14,6 +19,16 @@
     "mocha": "^9.1.2",
     "pactum": "^3.0.21",
     "puppeteer": "^10.4.0",
-    "tape": "^5.3.1"
-  }
+    "tape": "^5.3.1",
+    "serve": "^12.0.0",
+    "start-server-and-test": "1.13.1",
+    "styled-components": "^5.3.0",
+    "cypress": "8.2.0"
+  },
+  "browserslist": [
+    ">0.3%",
+    "not ie 11",
+    "not dead",
+    "not op_mini all"
+  ]
 }
